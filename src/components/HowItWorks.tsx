@@ -1,25 +1,55 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Video, Users, TrendingUp, ArrowDown, Rocket, Zap, Target } from 'lucide-react';
 
 const HowItWorks = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const section = document.getElementById('how-it-works');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
   const steps = [
     {
       icon: <Video className="w-6 h-6 text-blue-600" />,
       title: "Create",
       description: "We turn your existing content into thousands of high-performing short-form videos.",
-      color: "bg-blue-50"
+      color: "from-blue-50 to-blue-100",
+      iconColor: "text-blue-600",
+      delay: "delay-0"
     },
     {
       icon: <Users className="w-6 h-6 text-gray-900" />,
       title: "Distribute",
       description: "We publish 1,800 – 18,000 videos across fully branded sub-accounts, ensuring market domination.",
-      color: "bg-gray-50"
+      color: "from-gray-50 to-gray-100",
+      iconColor: "text-gray-900",
+      delay: "delay-150"
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-green-600" />,
       title: "Convert",
       description: "All traffic is redirected to your socials, offers, and sales funnels, leading to massive audience growth and revenue.",
-      color: "bg-green-50"
+      color: "from-green-50 to-green-100",
+      iconColor: "text-green-600",
+      delay: "delay-300"
     }
   ];
 
@@ -30,12 +60,17 @@ const HowItWorks = () => {
 
   return (
     <section id="how-it-works" className="py-32 bg-white relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50/30 to-white"></div>
+      
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="text-center mb-20 max-w-4xl mx-auto">
-          <div className="inline-flex items-center justify-center p-3 bg-blue-50 rounded-2xl mb-6">
-            <Rocket className="w-8 h-8 text-blue-600" />
+        <div className={`text-center mb-20 max-w-4xl mx-auto transform transition-all duration-1000 ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+        }`}>
+          <div className="inline-flex items-center justify-center p-3 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl mb-6 group hover:scale-110 transition-transform duration-300">
+            <Rocket className="w-8 h-8 text-blue-600 transform group-hover:rotate-12 transition-transform duration-300" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 font-manrope leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
             Our Proven System for<br/>Viral Growth
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
@@ -47,34 +82,53 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className="rounded-3xl overflow-hidden hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] transition-all duration-500 group bg-white"
+              className={`rounded-3xl overflow-hidden hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] transition-all duration-500 group bg-white transform ${
+                isVisible 
+                  ? `translate-y-0 opacity-100 ${step.delay}` 
+                  : 'translate-y-10 opacity-0'
+              }`}
             >
-              <div className="p-10">
-                <div className="mb-8">
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${step.color} group-hover:scale-110 transition-transform duration-300`}>
-                    {step.icon}
+              <div className="p-10 relative">
+                {/* Hover gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/0 to-gray-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="relative">
+                  <div className="mb-8 relative">
+                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br ${step.color} group-hover:scale-110 transition-transform duration-300`}>
+                      <div className="relative">
+                        {step.icon}
+                        <div className="absolute inset-0 blur-sm opacity-40">{step.icon}</div>
+                      </div>
+                    </div>
+                    {/* Connecting line for desktop */}
+                    {index < steps.length - 1 && (
+                      <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-gray-200 to-transparent transform -translate-y-1/2"></div>
+                    )}
                   </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-4 font-manrope text-gray-900">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed font-manrope text-lg">
-                    {step.description}
-                  </p>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 font-manrope text-gray-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 transition-all duration-300">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed font-manrope text-lg">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center">
+        <div className={`text-center transform transition-all duration-1000 delay-500 ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+        }`}>
           <button 
             onClick={scrollToContact}
-            className="px-8 py-4 bg-gray-900 text-white rounded-2xl font-medium hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 inline-flex items-center font-manrope group"
+            className="group px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-2xl font-medium hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 relative overflow-hidden"
           >
-            Start Your Journey
-            <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <span className="relative z-10 font-manrope">Start Your Journey</span>
+            <ArrowDown className="relative z-10 ml-2 h-5 w-5 inline-block group-hover:translate-y-1 transition-transform duration-300" />
           </button>
         </div>
       </div>
