@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font settings */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --gradient-primary: linear-gradient(135deg, #2563eb, #7c3aed);
+  --gradient-secondary: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  --gradient-accent: linear-gradient(135deg, #6366f1, #a855f7);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Modern card styles */
+.modern-card {
+  @apply rounded-3xl border border-white/20 bg-white/80 backdrop-blur-sm;
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.05),
+              0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modern-card:hover {
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12),
+              0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Border gradient */
+.border-gradient-to-r {
+  border-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to)) 1;
+}
+
+/* Button styles */
+.modern-button {
+  @apply rounded-full px-6 py-3 font-semibold transition-all duration-300 font-manrope;
+  background: var(--gradient-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modern-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modern-button-outline {
+  @apply rounded-full px-6 py-3 font-semibold transition-all duration-300 font-manrope;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.modern-button-outline:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styles */
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Section styles */
+.section-heading {
+  @apply text-4xl md:text-5xl font-bold leading-tight font-manrope;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card gradients */
+.gradient-card-blue {
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.gradient-card-purple {
+  background: linear-gradient(135deg, #ede9fe, #f3e8ff);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.gradient-card-pink {
+  background: linear-gradient(135deg, #fce7f3, #fae8ff);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Animation classes */
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glass effect */
+.glass-card {
+  @apply backdrop-blur-md bg-white/80;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styles */
+img {
+  @apply rounded-2xl;
+}
