@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden lg:flex items-center space-x-12">
             <div className="flex items-center space-x-10">
               <a href="#how-it-works" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-all duration-300 font-manrope flex items-center hover:translate-x-0.5">
                 How It Works
@@ -56,7 +56,7 @@ const Navbar = () => {
                 href="https://wa.me/33749595492" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-xl bg-gray-900 text-white font-medium transition-all duration-300 hover:shadow-lg hover:translate-y-[-1px] font-manrope"
+                className="px-5 py-2.5 rounded-xl bg-gray-900 text-white font-medium transition-all duration-300 hover:shadow-lg hover:translate-y-[-1px] font-manrope whitespace-nowrap"
               >
                 Let's Talk
               </a>
@@ -65,7 +65,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-900 p-2 rounded-xl hover:bg-gray-100 transition-all duration-300"
+            className="lg:hidden text-gray-900 p-2 rounded-xl hover:bg-gray-100 transition-all duration-300"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -75,7 +75,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl absolute w-full py-8 px-6 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border-t border-gray-100">
+        <div className="lg:hidden bg-white/95 backdrop-blur-xl absolute w-full py-8 px-6 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border-t border-gray-100">
           <div className="flex flex-col space-y-6">
             <a 
               href="#how-it-works" 
