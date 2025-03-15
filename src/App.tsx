@@ -7,6 +7,7 @@ import OurWork from './components/OurWork';
 import FinalCTA from './components/FinalCTA';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <HowItWorks />
         <PricingSection />
         <OurWork />
+        <FAQ />
         <FinalCTA />
       </main>
       <Footer />

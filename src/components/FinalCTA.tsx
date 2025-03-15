@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mail, Calendar } from 'lucide-react';
+import { ArrowRight, Mail, MessageCircle } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
@@ -29,25 +29,21 @@ const FinalCTA = () => {
             </a>
             
             <a 
-              href="https://calendly.com/creatorflowlab/30min-call" 
+              href="https://wa.me/33749595492" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group"
             >
-              <Calendar className="w-5 h-5 mr-3" />
-              <span className="font-medium">Schedule a Free Strategy Call</span>
+              <MessageCircle className="w-5 h-5 mr-3" />
+              <span className="font-medium">Let's Talk</span>
               <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>
           
-          <div className="flex items-center justify-center gap-8 text-gray-500 text-sm font-manrope">
+          <div className="flex items-center justify-center text-gray-500 text-sm font-manrope">
             <div className="flex items-center">
               <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
               No commitment required
-            </div>
-            <div className="flex items-center">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-              Free strategy session included
             </div>
           </div>
         </div>

@@ -24,13 +24,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center group cursor-pointer">
             <img 
-              src="https://i.imgur.com/YrtN2BD.png" 
+              src="https://i.imgur.com/196ODOB.png" 
               alt="Bluur Creator Logo" 
-              className="h-12 rounded-2xl mr-3 transition-transform duration-300 group-hover:scale-105"
+              className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="font-medium text-gray-900 font-manrope tracking-tight">
+            <div className="font-medium text-gray-900 font-manrope tracking-tight ml-3">
               <span className="text-2xl font-extrabold">Bluur</span>
-              <span className="text-lg font-bold ml-2 tracking-wide text-gray-600">CREATOR</span>
+              <span className="text-lg font-bold ml-1 tracking-wide text-gray-600">CREATOR</span>
             </div>
           </div>
 
@@ -53,16 +53,7 @@ const Navbar = () => {
             
             <div className="flex items-center space-x-5">
               <a 
-                href="https://calendly.com/creatorflowlab/30min-call" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-xl text-gray-600 font-medium hover:text-gray-900 transition-all duration-300 font-manrope flex items-center hover:translate-x-0.5"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                Book a Call
-              </a>
-              <a 
-                href="https://calendly.com/creatorflowlab/30min-call" 
+                href="https://wa.me/33749595492" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-xl bg-gray-900 text-white font-medium transition-all duration-300 hover:shadow-lg hover:translate-y-[-1px] font-manrope"
@@ -112,17 +103,7 @@ const Navbar = () => {
             </a>
             <div className="pt-4 flex flex-col space-y-4">
               <a 
-                href="https://calendly.com/creatorflowlab/30min-call" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full px-5 py-3 rounded-xl border border-gray-200 text-gray-600 font-medium hover:text-gray-900 hover:border-gray-400 transition-all duration-300 font-manrope flex items-center justify-center"
-                onClick={() => setIsOpen(false)}
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Book a Call
-              </a>
-              <a 
-                href="https://calendly.com/creatorflowlab/30min-call" 
+                href="https://wa.me/33749595492" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full px-5 py-3 rounded-xl bg-gray-900 text-white font-medium transition-all duration-300 hover:shadow-lg font-manrope flex items-center justify-center"
