@@ -7,19 +7,23 @@ const FAQ = () => {
   const faqs = [
     {
       question: "How do you guarantee millions of views?",
-      answer: "We leverage a proven system of content optimization, strategic distribution, and data-driven insights. While we can't guarantee exact numbers, our methodology consistently achieves viral reach through: 1) Multi-platform content distribution, 2) Advanced audience targeting, and 3) Engagement optimization techniques."
+      answer: "We use a strategic content flood approach, publishing thousands of videos that force the algorithm to push your content. It's not luck, it's a formula."
     },
     {
       question: "How long before seeing initial results?",
-      answer: "Most clients see initial traction within the first 2-4 weeks. Our systematic approach involves rapid testing and optimization, allowing us to identify winning content patterns quickly. We then scale successful strategies for maximum impact."
+      answer: "Our system is built for speed, once the content wave is launched, the engagement snowballs, pushing your brand in front of millions. The real growth compounds over weeks as the algorithm continues to amplify reach."
     },
     {
       question: "What performance guarantees do you offer?",
-      answer: "We provide detailed performance tracking and weekly reports. If campaigns don't meet agreed-upon KPIs, we adjust our strategy at no additional cost. Our success is measured by your growth, and we're committed to delivering measurable results."
+      answer: "We guarantee visibility. Every campaign includes a minimum benchmark of organic views. For high-tier packages, we provide performance tracking and real-time optimizations to ensure the best possible reach. Our track record speaks for itself—2B+ views generated, 100+ brands scaled."
     },
     {
       question: "How does payment and campaign tracking work?",
-      answer: "We offer flexible payment plans with clear deliverables."
+      answer: "Payments are upfront and secure. We accept multiple payment methods, including wire transfers and crypto for high-volume transactions. Every campaign comes with a real-time performance dashboard where you can track views, engagement, and campaign progress in real-time."
+    },
+    {
+      question: "Who creates the content? Do we need to provide videos?",
+      answer: "You don't have to lift a finger. We handle everything—from content creation to distribution. If you already have high-performing assets, we can repurpose them for maximum impact. Otherwise, our team produces viral-optimized content based on proven engagement triggers."
     }
   ];
 
