@@ -60,4 +60,4 @@ This project is private and confidential. All rights reserved.
 
 ## Contact
 
-For any inquiries, please reach out to contact@bluurcreator.com 
+For any inquiries, please reach out to bluurcreator@gmail.com 

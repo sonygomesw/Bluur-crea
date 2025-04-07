@@ -21,11 +21,11 @@ const FinalCTA = () => {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
             <a 
-              href="mailto:contact@bluurcreator.com" 
+              href="mailto:bluurcreator@gmail.com" 
               className="flex items-center px-8 py-4 bg-blue-50 text-blue-600 rounded-2xl hover:bg-blue-100 transition-colors duration-300 group"
             >
               <Mail className="w-5 h-5 mr-3" />
-              <span className="font-medium">contact@bluurcreator.com</span>
+              <span className="font-medium">bluurcreator@gmail.com</span>
             </a>
             
             <a 

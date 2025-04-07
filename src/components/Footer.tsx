@@ -71,7 +71,7 @@ const Footer = () => {
             <ul className="space-y-4 font-manrope">
               <li className="group flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-300">
                 <Mail className="w-4 h-4 mr-2" />
-                contact@bluurcreator.com
+                bluurcreator@gmail.com
               </li>
               <li>
                 <a 
