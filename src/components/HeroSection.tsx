@@ -65,14 +65,11 @@ const HeroSection = () => {
             }`}>
               <p className="text-sm text-gray-500 mb-6 font-manrope uppercase tracking-wider">Trusted by Leading Brands</p>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png" 
-                     alt="H&M" 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/640px-H%26M-Logo.svg.png"
+                     alt="H&M"
                      className="h-10 md:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
-                <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Swoosh.svg/800px-Swoosh.svg.png" 
-                     alt="Nike" 
-                     className="h-10 md:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
-                <img src="https://i.imgur.com/CgYWfau.jpeg" 
-                     alt="Gymshark" 
+                <img src="https://i.imgur.com/CgYWfau.jpeg"
+                     alt="Gymshark"
                      className="h-10 md:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300 object-contain mix-blend-multiply" />
               </div>
             </div>
