@@ -29,7 +29,7 @@ const FinalCTA = () => {
             </a>
             
             <a 
-              href="https://wa.me/33749595492" 
+              href="https://wa.me/33628160295" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group"

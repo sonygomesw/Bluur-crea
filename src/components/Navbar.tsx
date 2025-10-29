@@ -53,7 +53,7 @@ const Navbar = () => {
             
             <div className="flex items-center space-x-5">
               <a 
-                href="https://wa.me/33749595492" 
+                href="https://wa.me/33628160295" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-xl bg-gray-900 text-white font-medium transition-all duration-300 hover:shadow-lg hover:translate-y-[-1px] font-manrope whitespace-nowrap"
@@ -103,7 +103,7 @@ const Navbar = () => {
             </a>
             <div className="pt-4 flex flex-col space-y-4">
               <a 
-                href="https://wa.me/33749595492" 
+                href="https://wa.me/33628160295" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full px-5 py-3 rounded-xl bg-gray-900 text-white font-medium transition-all duration-300 hover:shadow-lg font-manrope flex items-center justify-center"
