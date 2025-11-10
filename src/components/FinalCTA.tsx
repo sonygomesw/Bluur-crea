@@ -19,29 +19,20 @@ const FinalCTA = () => {
             We turn your sound, your content, or your brand into a viral wave.
           </p>
 
-          <div className="flex flex-col md:flex-row items-start justify-center gap-6 max-w-3xl mx-auto mb-12">
-            <div className="flex items-start flex-1">
-              <span className="text-2xl mr-2">🎵</span>
-              <div className="text-left">
-                <p className="text-base font-semibold text-gray-900 font-manrope">Artists</p>
-                <p className="text-sm text-gray-600 font-manrope">Get streams, followers, bookings & label deals</p>
-              </div>
+          <div className="flex flex-col md:flex-row items-start justify-center gap-8 max-w-3xl mx-auto mb-12">
+            <div className="text-left flex-1">
+              <p className="text-base font-semibold text-gray-900 font-manrope mb-1">Artists</p>
+              <p className="text-sm text-gray-600 font-manrope">Get streams, followers, bookings & label deals</p>
             </div>
 
-            <div className="flex items-start flex-1">
-              <span className="text-2xl mr-2">📸</span>
-              <div className="text-left">
-                <p className="text-base font-semibold text-gray-900 font-manrope">Creators</p>
-                <p className="text-sm text-gray-600 font-manrope">Get clients, sales & collaborations</p>
-              </div>
+            <div className="text-left flex-1">
+              <p className="text-base font-semibold text-gray-900 font-manrope mb-1">Creators</p>
+              <p className="text-sm text-gray-600 font-manrope">Get clients, sales & collaborations</p>
             </div>
 
-            <div className="flex items-start flex-1">
-              <span className="text-2xl mr-2">🏷️</span>
-              <div className="text-left">
-                <p className="text-base font-semibold text-gray-900 font-manrope">Brands</p>
-                <p className="text-sm text-gray-600 font-manrope">Get sales, traffic & recognition</p>
-              </div>
+            <div className="text-left flex-1">
+              <p className="text-base font-semibold text-gray-900 font-manrope mb-1">Brands</p>
+              <p className="text-sm text-gray-600 font-manrope">Get sales, traffic & recognition</p>
             </div>
           </div>
 

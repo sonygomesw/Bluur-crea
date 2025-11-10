@@ -112,23 +112,23 @@ const OurWork = () => {
           </p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-violet-50 to-fuchsia-50 rounded-2xl p-6">
-              <p className="text-3xl font-bold text-gray-900 font-manrope mb-2">🔥 Artists</p>
+              <p className="text-2xl font-bold text-gray-900 font-manrope mb-2">Artists</p>
               <p className="text-gray-700 font-manrope">10M+ views = 1M+ Spotify streams</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6">
-              <p className="text-3xl font-bold text-gray-900 font-manrope mb-2">🔥 Creators</p>
+              <p className="text-2xl font-bold text-gray-900 font-manrope mb-2">Creators</p>
               <p className="text-gray-700 font-manrope">3M+ views = 20+ new clients</p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6">
-              <p className="text-3xl font-bold text-gray-900 font-manrope mb-2">🔥 Brands</p>
+              <p className="text-2xl font-bold text-gray-900 font-manrope mb-2">Brands</p>
               <p className="text-gray-700 font-manrope">700K views = products sold out in 48h</p>
             </div>
           </div>
-          <p className="text-base text-gray-600 font-manrope mt-8 max-w-2xl mx-auto">
-            ✅ Over 2 Billion total organic views<br/>
-            ✅ 500+ campaigns delivered<br/>
-            ✅ Millions in real-world results
-          </p>
+          <div className="mt-8 flex flex-col gap-2 max-w-2xl mx-auto">
+            <p className="text-base text-gray-600 font-manrope">Over 2 Billion total organic views</p>
+            <p className="text-base text-gray-600 font-manrope">500+ campaigns delivered</p>
+            <p className="text-base text-gray-600 font-manrope">Millions in real-world results</p>
+          </div>
         </div>
         
         <div className="max-w-6xl mx-auto">

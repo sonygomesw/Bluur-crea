@@ -118,7 +118,7 @@ const HeroSection = () => {
               </div>
 
               <p className="text-base md:text-lg text-gray-600 font-manrope text-center">
-                💬 2B+ organic views turned into millions of streams, sales & real growth.
+                2B+ organic views turned into millions of streams, sales & real growth.
               </p>
             </div>
             
