@@ -121,9 +121,24 @@ const OurWork = () => {
         {/* Disclaimer Section */}
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-500 font-manrope max-w-2xl mx-auto">
-            *Results based on comprehensive analysis of public data and implementation of similar viral strategies. 
+            *Results based on comprehensive analysis of public data and implementation of similar viral strategies.
             These case studies demonstrate the potential impact of our proven methodologies.
           </p>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-16 text-center">
+          <button
+            onClick={() => {
+              const pricingSection = document.getElementById('pricing');
+              pricingSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="group px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-2xl font-medium hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 inline-flex items-center font-manrope relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <span className="relative z-10">See Our Plans</span>
+            <ArrowRight className="relative z-10 ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
         </div>
       </div>
     </section>

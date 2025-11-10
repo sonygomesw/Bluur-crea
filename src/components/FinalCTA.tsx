@@ -12,32 +12,25 @@ const FinalCTA = () => {
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 font-manrope leading-tight">
-            Ready to Scale Your<br/>Brand Together?
+            Ready to Start<br/>Your Campaign?
           </h2>
-          
+
           <p className="text-xl text-gray-600 font-manrope leading-relaxed mb-12 max-w-2xl mx-auto">
             Join hundreds of successful creators who have transformed their online presence with our proven system
           </p>
-          
+
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
-            <a 
-              href="mailto:bluurcreator@gmail.com" 
-              className="flex items-center px-8 py-4 bg-blue-50 text-blue-600 rounded-2xl hover:bg-blue-100 transition-colors duration-300 group"
+            <button
+              onClick={() => {
+                const pricingSection = document.getElementById('pricing');
+                pricingSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="flex items-center px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-2xl hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group relative overflow-hidden"
             >
-              <Mail className="w-5 h-5 mr-3" />
-              <span className="font-medium">bluurcreator@gmail.com</span>
-            </a>
-            
-            <a 
-              href="https://wa.me/33628160295" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group"
-            >
-              <MessageCircle className="w-5 h-5 mr-3" />
-              <span className="font-medium">Let's Talk</span>
-              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
+              <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <span className="font-medium relative z-10">Start Now</span>
+              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+            </button>
           </div>
           
           <div className="flex items-center justify-center text-gray-500 text-sm font-manrope">

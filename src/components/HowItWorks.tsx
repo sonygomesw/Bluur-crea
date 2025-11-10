@@ -38,7 +38,7 @@ const HowItWorks = () => {
     {
       icon: <Users className="w-6 h-6 text-gray-900" />,
       title: "Distribute",
-      description: "We publish 1,800 – 18,000 videos across fully branded sub-accounts, ensuring market domination.",
+      description: "We publish 300 to 10,000 videos per campaign depending on your plan, across fully branded sub-accounts.",
       color: "from-gray-50 to-gray-100",
       iconColor: "text-gray-900",
       delay: "delay-150"

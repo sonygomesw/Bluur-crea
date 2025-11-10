@@ -13,6 +13,11 @@ const HeroSection = () => {
     contactSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    pricingSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-gradient-to-b from-white via-blue-50/10 to-white">
       {/* Background Elements with enhanced animation */}
@@ -95,16 +100,24 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <button 
-              onClick={scrollToContact}
-              className={`group px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-2xl font-medium hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center relative overflow-hidden transform ${
+            <div className="flex flex-col items-center gap-4">
+              <button
+                onClick={scrollToPricing}
+                className={`group px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-2xl font-medium hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 flex items-center justify-center relative overflow-hidden transform ${
+                  isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <span className="relative z-10">Start a Campaign</span>
+                <ArrowDown className="relative z-10 ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" />
+              </button>
+
+              <p className={`text-sm text-gray-500 font-manrope transform transition-all duration-1000 delay-100 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <span className="relative z-10">Get 10M+ Views Now</span>
-              <ArrowDown className="relative z-10 ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" />
-            </button>
+              }`}>
+                From $400 campaigns to full-scale viral domination.
+              </p>
+            </div>
           </div>
           
           <div className={`flex flex-wrap justify-center gap-10 text-gray-500 font-manrope transform transition-all duration-1000 delay-500 ${
