@@ -30,7 +30,7 @@ const HowItWorks = () => {
     {
       icon: <Video className="w-6 h-6 text-blue-600" />,
       title: "Create",
-      description: "We turn your existing content into thousands of high-performing short-form videos.",
+      description: "We transform your content or sound into viral-ready short videos.",
       color: "from-blue-50 to-blue-100",
       iconColor: "text-blue-600",
       delay: "delay-0"
@@ -38,7 +38,7 @@ const HowItWorks = () => {
     {
       icon: <Users className="w-6 h-6 text-gray-900" />,
       title: "Distribute",
-      description: "We publish 300 to 10,000 videos per campaign depending on your plan, across fully branded sub-accounts.",
+      description: "We publish 300–10,000 posts across TikTok, Reels, and Shorts.",
       color: "from-gray-50 to-gray-100",
       iconColor: "text-gray-900",
       delay: "delay-150"
@@ -46,7 +46,7 @@ const HowItWorks = () => {
     {
       icon: <TrendingUp className="w-6 h-6 text-green-600" />,
       title: "Convert",
-      description: "All traffic is redirected to your socials, offers, and sales funnels, leading to massive audience growth and revenue.",
+      description: "We turn that attention into streams, followers, or customers.",
       color: "from-green-50 to-green-100",
       iconColor: "text-green-600",
       delay: "delay-300"
@@ -71,10 +71,10 @@ const HowItWorks = () => {
             <Rocket className="w-8 h-8 text-blue-600 transform group-hover:rotate-12 transition-transform duration-300" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            Our Proven System for<br/>Viral Growth
+            Our Proven 3-Step System
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            Transform your brand with our three-step process that consistently delivers results
+            You don't need luck — you need a system that never stops creating viral moments.
           </p>
         </div>
         

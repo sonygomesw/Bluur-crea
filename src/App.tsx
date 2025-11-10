@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, ArrowRight, CheckCircle, Star } from 'lucide-react';
 import HeroSection from './components/HeroSection';
+import WhyBluur from './components/WhyBluur';
 import HowItWorks from './components/HowItWorks';
 import PricingSection from './components/PricingSection';
 import OurWork from './components/OurWork';
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <WhyBluur />
         <HowItWorks />
         <PricingSection />
         <OurWork />

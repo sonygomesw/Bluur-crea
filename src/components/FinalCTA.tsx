@@ -12,12 +12,38 @@ const FinalCTA = () => {
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 font-manrope leading-tight">
-            Ready to Start<br/>Your Campaign?
+            You Don't Need Luck.<br/>You Need Distribution.
           </h2>
 
-          <p className="text-xl text-gray-600 font-manrope leading-relaxed mb-12 max-w-2xl mx-auto">
-            Join hundreds of successful creators who have transformed their online presence with our proven system
+          <p className="text-xl text-gray-600 font-manrope leading-relaxed mb-8 max-w-2xl mx-auto">
+            We turn your sound, your content, or your brand into a viral wave.
           </p>
+
+          <div className="flex flex-col md:flex-row items-start justify-center gap-6 max-w-3xl mx-auto mb-12">
+            <div className="flex items-start flex-1">
+              <span className="text-2xl mr-2">🎵</span>
+              <div className="text-left">
+                <p className="text-base font-semibold text-gray-900 font-manrope">Artists</p>
+                <p className="text-sm text-gray-600 font-manrope">Get streams, followers, bookings & label deals</p>
+              </div>
+            </div>
+
+            <div className="flex items-start flex-1">
+              <span className="text-2xl mr-2">📸</span>
+              <div className="text-left">
+                <p className="text-base font-semibold text-gray-900 font-manrope">Creators</p>
+                <p className="text-sm text-gray-600 font-manrope">Get clients, sales & collaborations</p>
+              </div>
+            </div>
+
+            <div className="flex items-start flex-1">
+              <span className="text-2xl mr-2">🏷️</span>
+              <div className="text-left">
+                <p className="text-base font-semibold text-gray-900 font-manrope">Brands</p>
+                <p className="text-sm text-gray-600 font-manrope">Get sales, traffic & recognition</p>
+              </div>
+            </div>
+          </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
             <button
@@ -28,7 +54,7 @@ const FinalCTA = () => {
               className="flex items-center px-8 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-2xl hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <span className="font-medium relative z-10">Start Now</span>
+              <span className="font-medium relative z-10">Start Your Campaign</span>
               <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
             </button>
           </div>

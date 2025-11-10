@@ -105,10 +105,29 @@ const OurWork = () => {
             <Award className="w-8 h-8 text-blue-600" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 font-manrope leading-tight">
-            Exceptional Results<br/>from Our Clients
+            Results That Matter
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            Discover how we've transformed the online presence of top creators
+            From Views → To Streams → To Income
+          </p>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-violet-50 to-fuchsia-50 rounded-2xl p-6">
+              <p className="text-3xl font-bold text-gray-900 font-manrope mb-2">🔥 Artists</p>
+              <p className="text-gray-700 font-manrope">10M+ views = 1M+ Spotify streams</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6">
+              <p className="text-3xl font-bold text-gray-900 font-manrope mb-2">🔥 Creators</p>
+              <p className="text-gray-700 font-manrope">3M+ views = 20+ new clients</p>
+            </div>
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6">
+              <p className="text-3xl font-bold text-gray-900 font-manrope mb-2">🔥 Brands</p>
+              <p className="text-gray-700 font-manrope">700K views = products sold out in 48h</p>
+            </div>
+          </div>
+          <p className="text-base text-gray-600 font-manrope mt-8 max-w-2xl mx-auto">
+            ✅ Over 2 Billion total organic views<br/>
+            ✅ 500+ campaigns delivered<br/>
+            ✅ Millions in real-world results
           </p>
         </div>
         

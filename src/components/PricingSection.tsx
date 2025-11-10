@@ -33,9 +33,10 @@ const PricingSection = () => {
 
   const plans = [
     {
-      name: 'Launch',
-      description: 'Starter campaign for creators & artists',
-      videos: '300 videos',
+      name: 'Starter Campaign',
+      description: 'Best for testing new tracks or products',
+      videos: '300 videos / 30 days',
+      expectedResults: '+100K–300K organic views',
       price: '$400',
       priceLabel: 'per campaign',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
@@ -46,9 +47,10 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Growth',
-      description: 'Consistent viral growth',
-      videos: '900 videos',
+      name: 'Growth Campaign',
+      description: 'Typical outcome: 10K–100K streams or followers',
+      videos: '900 videos / 30 days',
+      expectedResults: '+500K–1M organic views',
       price: '$900',
       priceLabel: 'per campaign',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
@@ -59,9 +61,10 @@ const PricingSection = () => {
       popular: true
     },
     {
-      name: 'Domination',
-      description: 'Scale like top creators',
-      videos: '3,000 videos',
+      name: 'Domination Campaign',
+      description: 'Drives massive exposure, bookings & brand awareness',
+      videos: '3,000 videos / 30 days',
+      expectedResults: '+2M–10M organic views',
       price: '$3,000',
       priceLabel: 'per campaign',
       icon: <Target className="w-6 h-6 text-fuchsia-600" />,
@@ -72,9 +75,10 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Supreme',
-      description: 'Enterprise / label-level',
-      videos: '10,000 videos',
+      name: 'Supreme Campaign',
+      description: 'Maximum viral domination for enterprises',
+      videos: '10,000 videos / 30 days',
+      expectedResults: '+10M+ organic views',
       price: '$10,000',
       priceLabel: 'per campaign',
       icon: <Crown className="w-6 h-6 text-gray-900" />,
@@ -131,22 +135,25 @@ const PricingSection = () => {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold mb-2 font-manrope text-gray-900">
+                  <h3 className="text-xl font-bold mb-2 font-manrope text-gray-900">
                     {plan.name}
                   </h3>
 
-                  <p className="text-gray-600 mb-4 font-manrope text-sm leading-relaxed min-h-[40px]">
-                    {plan.description}
+                  <p className="text-3xl font-bold text-gray-900 font-manrope mb-1">
+                    {plan.price}
                   </p>
 
-                  <div className="mb-4">
-                    <p className="text-3xl font-bold text-gray-900 font-manrope mb-1">
-                      {plan.price}
-                    </p>
-                    <p className="text-sm text-gray-500 font-manrope">
-                      {plan.videos} / campaign
-                    </p>
-                  </div>
+                  <p className="text-sm text-gray-500 font-manrope mb-3">
+                    {plan.videos}
+                  </p>
+
+                  <p className="text-sm font-semibold text-green-700 bg-green-50 rounded-lg px-3 py-2 mb-3">
+                    {plan.expectedResults}
+                  </p>
+
+                  <p className="text-gray-600 mb-4 font-manrope text-sm leading-relaxed">
+                    {plan.description}
+                  </p>
 
                   <a
                     href={plan.paymentLink}
