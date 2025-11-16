@@ -90,7 +90,7 @@ const HeroSection = () => {
                   </span>
                   <div className="text-left">
                     <p className="text-base md:text-lg text-gray-900 font-manrope font-semibold">For Artists</p>
-                    <p className="text-sm md:text-base text-gray-600 font-manrope">More streams, followers, bookings & label deals</p>
+                    <p className="text-sm md:text-base text-gray-600 font-manrope">Turn your track into 300–3000 viral videos in 30 days</p>
                   </div>
                 </div>
 

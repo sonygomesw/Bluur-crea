@@ -28,25 +28,33 @@ const HowItWorks = () => {
 
   const steps = [
     {
-      icon: <Video className="w-6 h-6 text-blue-600" />,
-      title: "Create",
-      description: "We transform your content or sound into viral-ready short videos.",
-      color: "from-blue-50 to-blue-100",
-      iconColor: "text-blue-600",
+      icon: <Rocket className="w-6 h-6 text-violet-600" />,
+      title: "Step 1 — You Send Your Track",
+      description: "Upload your music, content, or product. That's it.",
+      color: "from-violet-50 to-violet-100",
+      iconColor: "text-violet-600",
       delay: "delay-0"
     },
     {
+      icon: <Video className="w-6 h-6 text-blue-600" />,
+      title: "Step 2 — We Create 30 to 10,000 Viral Videos",
+      description: "Our AI & creative team produce hundreds to thousands of trend-ready clips.",
+      color: "from-blue-50 to-blue-100",
+      iconColor: "text-blue-600",
+      delay: "delay-100"
+    },
+    {
       icon: <Users className="w-6 h-6 text-gray-900" />,
-      title: "Distribute",
-      description: "We publish 300–10,000 posts across TikTok, Reels, and Shorts.",
+      title: "Step 3 — We Post Across 200+ Accounts",
+      description: "We distribute across TikTok, Reels & Shorts using our 60+ phone farm.",
       color: "from-gray-50 to-gray-100",
       iconColor: "text-gray-900",
-      delay: "delay-150"
+      delay: "delay-200"
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-green-600" />,
-      title: "Convert",
-      description: "We turn that attention into streams, followers, or customers.",
+      title: "Step 4 — You Get Views, Followers & Streams",
+      description: "Watch your metrics explode as viral content drives real growth.",
       color: "from-green-50 to-green-100",
       iconColor: "text-green-600",
       delay: "delay-300"
@@ -71,14 +79,14 @@ const HowItWorks = () => {
             <Rocket className="w-8 h-8 text-blue-600 transform group-hover:rotate-12 transition-transform duration-300" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            Our Proven 3-Step System
+            How We Actually Work
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            You don't need luck — you need a system that never stops creating viral moments.
+            Simple, transparent, and built to scale your viral success.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-20">
           {steps.map((step, index) => (
             <div 
               key={index} 
