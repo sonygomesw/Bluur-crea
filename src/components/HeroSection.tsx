@@ -19,15 +19,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-gradient-to-b from-white via-blue-50/10 to-white">
-      {/* Background Elements with enhanced animation */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gradient-to-r from-violet-100/30 to-blue-100/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-gradient-to-r from-fuchsia-100/30 to-violet-100/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-[500px] h-[500px] bg-gradient-to-r from-blue-100/30 to-indigo-100/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob animation-delay-4000"></div>
-      </div>
-
-      <div className="container mx-auto px-6 md:px-12 z-10">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-white">
+      <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center text-center mb-20">            
             <div

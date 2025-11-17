@@ -23,15 +23,11 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex justify-between items-center">
           <div className="flex items-center group cursor-pointer">
-            <img 
-              src="https://i.imgur.com/196ODOB.png" 
-              alt="Bluur Creator Logo" 
+            <img
+              src="/logobluur.png"
+              alt="Bluur Logo"
               className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="font-medium text-gray-900 font-manrope tracking-tight ml-3">
-              <span className="text-2xl font-extrabold">Bluur</span>
-              <span className="text-lg font-bold ml-1 tracking-wide text-gray-600">CREATOR</span>
-            </div>
           </div>
 
           {/* Desktop Menu */}
