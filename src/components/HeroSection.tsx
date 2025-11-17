@@ -22,19 +22,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-20">            
-            <div
-              className={`flex justify-center mb-10 transform transition-all duration-1000 ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
-            >
-              <img
-                src="/logobluur.png"
-                alt="Bluur Logo"
-                className="h-24 md:h-32 w-auto object-contain"
-              />
-            </div>
-              
+          <div className="flex flex-col items-center text-center mb-20">
             <h1
               className={`font-manrope text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-violet-900 to-gray-900 mb-6 leading-[1.1] transform transition-all duration-1000 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
