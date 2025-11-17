@@ -40,7 +40,7 @@ const PricingSection = () => {
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
       color: 'from-blue-50 to-blue-100',
       buttonText: 'Get Started',
-      paymentLink: 'https://buy.stripe.com/3cIbJ0clT63D3uzg5xgUM0f',
+      paymentLink: 'https://buy.stripe.com/cNieVc71zdw59SXg5xgUM0j',
       delay: 'delay-0',
       popular: false,
       features: [
@@ -57,7 +57,7 @@ const PricingSection = () => {
       icon: <Zap className="w-6 h-6 text-violet-600" />,
       color: 'from-violet-50 to-violet-100',
       buttonText: 'Get Started',
-      paymentLink: 'https://buy.stripe.com/7sY4gy71zgIhc15g5xgUM0g',
+      paymentLink: 'https://buy.stripe.com/8x2fZgdpX77Hc157z1gUM0k',
       delay: 'delay-100',
       popular: false,
       features: [
@@ -74,7 +74,7 @@ const PricingSection = () => {
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
       buttonText: 'Get Started',
-      paymentLink: 'https://buy.stripe.com/3cI28q2Lj8bLc156uXgUM0h',
+      paymentLink: 'https://buy.stripe.com/fZubJ05XvbnX8OT9H9gUM0l',
       delay: 'delay-200',
       popular: true,
       features: [
@@ -92,7 +92,7 @@ const PricingSection = () => {
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
       buttonText: 'Get Started',
-      paymentLink: 'https://buy.stripe.com/9B69ASgC977H6GLcTlgUM0i',
+      paymentLink: 'https://buy.stripe.com/28E3cu4Tr3Vv1mraLdgUM0m',
       delay: 'delay-300',
       popular: false,
       features: [
