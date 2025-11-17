@@ -34,51 +34,73 @@ const PricingSection = () => {
   const plans = [
     {
       name: 'Starter',
-      videos: '250 TikTok Videos',
-      price: '299€',
+      videos: '300 TikTok Videos',
+      price: '€399',
       description: '',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
       color: 'from-blue-50 to-blue-100',
       buttonText: 'Get Started',
       paymentLink: 'https://buy.stripe.com/3cIbJ0clT63D3uzg5xgUM0f',
       delay: 'delay-0',
-      popular: false
+      popular: false,
+      features: [
+        '24/7 Distribution',
+        'Essential reporting',
+        'Trend optimization included'
+      ]
     },
     {
       name: 'Growth',
-      videos: '500 TikTok Videos',
-      price: '499€',
+      videos: '1,000 TikTok Videos',
+      price: '€999',
       description: '',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
       color: 'from-violet-50 to-violet-100',
       buttonText: 'Get Started',
       paymentLink: 'https://buy.stripe.com/7sY4gy71zgIhc15g5xgUM0g',
       delay: 'delay-100',
-      popular: false
+      popular: false,
+      features: [
+        '24/7 Distribution',
+        'Full campaign reporting',
+        'Deeper trend optimization'
+      ]
     },
     {
       name: 'Viral',
-      videos: '1,500 TikTok Videos',
-      price: '999€',
+      videos: '3,000 TikTok Videos',
+      price: '€2,490',
       description: 'Most Popular',
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
       buttonText: 'Get Started',
       paymentLink: 'https://buy.stripe.com/3cI28q2Lj8bLc156uXgUM0h',
       delay: 'delay-200',
-      popular: true
+      popular: true,
+      features: [
+        'Priority distribution',
+        'Full analytics dashboard',
+        'Advanced trend optimization',
+        'High-performing account pool'
+      ]
     },
     {
       name: 'Domination',
-      videos: '5,000 TikTok Videos',
-      price: '2,490€',
+      videos: '7,500 TikTok Videos',
+      price: '€4,990',
       description: '',
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
       buttonText: 'Get Started',
       paymentLink: 'https://buy.stripe.com/9B69ASgC977H6GLcTlgUM0i',
       delay: 'delay-300',
-      popular: false
+      popular: false,
+      features: [
+        'Premium distribution',
+        'Dedicated optimization',
+        'Maximum exposure',
+        'Large-scale creator network'
+      ]
     }
   ];
 
@@ -142,26 +164,12 @@ const PricingSection = () => {
                   )}
 
                   <div className="space-y-2 mb-6 text-left text-sm text-gray-600 font-manrope">
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span>Distribution 24/7</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span>Full reporting</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span>Trend optimization</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span>No contract</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span>Cancel anytime</span>
-                    </div>
+                    {plan.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
                   </div>
 
                   <a
@@ -189,10 +197,13 @@ const PricingSection = () => {
         }`}>
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 border border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-manrope mb-4">
-              Custom — 10,000–100,000 videos
+              Custom — 10,000 to 100,000 videos
             </h3>
-            <p className="text-lg text-gray-600 font-manrope mb-6">
-              For major artists & labels
+            <p className="text-lg font-bold text-gray-900 font-manrope mb-2">
+              €10,000 – €50,000
+            </p>
+            <p className="text-base text-gray-600 font-manrope mb-6">
+              For major artists & labels needing global exposure.
             </p>
             <a
               href="https://wa.me/33628160295"
