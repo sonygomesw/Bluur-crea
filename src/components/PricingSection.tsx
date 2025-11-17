@@ -34,7 +34,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: 'Starter',
-      videos: '100 vidéos',
+      videos: '100 Videos',
       price: '199€',
       description: '',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
@@ -46,7 +46,7 @@ const PricingSection = () => {
     },
     {
       name: 'Growth',
-      videos: '300 vidéos',
+      videos: '300 Videos',
       price: '499€',
       description: '',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
@@ -58,9 +58,9 @@ const PricingSection = () => {
     },
     {
       name: 'Viral',
-      videos: '500 vidéos',
+      videos: '500 Videos',
       price: '999€',
-      description: 'Plan principal',
+      description: 'Most Popular',
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
       buttonText: 'Get Started',
@@ -70,7 +70,7 @@ const PricingSection = () => {
     },
     {
       name: 'Domination',
-      videos: '1,500 vidéos',
+      videos: '1,500 Videos',
       price: '2,490€',
       description: '',
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
@@ -189,10 +189,10 @@ const PricingSection = () => {
         }`}>
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 border border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-manrope mb-4">
-              Ultra — 10,000+ vidéos
+              Ultra — 10,000+ Videos
             </h3>
             <p className="text-lg text-gray-600 font-manrope mb-6">
-              Sur demande
+              On Request
             </p>
             <a
               href="mailto:bluurcreator@gmail.com"
