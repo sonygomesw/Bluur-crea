@@ -16,20 +16,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <div className="flex items-center mb-8 group">
-              <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-violet-200/40 via-fuchsia-200/40 to-blue-200/40 rounded-3xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
-                <div className="relative">
-                  <img 
-                    src="https://i.imgur.com/196ODOB.png" 
-                    alt="Bluur Creator Logo" 
-                    className="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-              </div>
-              <div className="ml-3 font-medium text-gray-900 font-manrope tracking-tight">
-                <span className="text-2xl font-extrabold">Bluur</span>
-                <span className="text-lg font-bold ml-1 tracking-wide text-gray-600">CREATOR</span>
-              </div>
+              <img
+                src="/logobluur.png"
+                alt="Bluur Logo"
+                className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </div>
             <p className="mb-8 max-w-md text-gray-600 font-manrope leading-relaxed">
               We help brands go viral on TikTok through authentic creator collaborations and strategic content distribution.
@@ -75,7 +66,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/bluur.creator/"
+                  href="https://www.instagram.com/bluurcreator/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-300"
@@ -86,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.threads.net/@bluur.creator"
+                  href="https://www.threads.net/@bluurcreator"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-300"
