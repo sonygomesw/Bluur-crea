@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Check, ArrowRight, Rocket, Zap, Target, Crown } from 'lucide-react';
-import OrderModal from './OrderModal';
 
 const PricingSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<any>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,11 +29,6 @@ const PricingSection = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     contactSection?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleGetStarted = (plan: any) => {
-    setSelectedPlan(plan);
-    setIsModalOpen(true);
   };
 
   const plans = [
@@ -172,8 +164,10 @@ const PricingSection = () => {
                     </div>
                   </div>
 
-                  <button
-                    onClick={() => handleGetStarted(plan)}
+                  <a
+                    href={plan.paymentLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`w-full px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 group/btn ${
                       plan.popular
                         ? 'bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:shadow-lg hover:translate-y-[-2px]'
@@ -182,7 +176,7 @@ const PricingSection = () => {
                   >
                     <span className="font-manrope">{plan.buttonText}</span>
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -213,15 +207,6 @@ const PricingSection = () => {
         </div>
 
       </div>
-
-      {/* Order Modal */}
-      {selectedPlan && (
-        <OrderModal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-          plan={selectedPlan}
-        />
-      )}
     </section>
   );
 };
