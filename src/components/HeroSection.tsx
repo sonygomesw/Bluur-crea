@@ -69,13 +69,12 @@ const HeroSection = () => {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}>
               <div className="inline-flex flex-col items-center gap-3 bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <div className="flex flex-col items-center gap-2 text-sm text-gray-600 font-manrope">
-                  <span className="flex items-center gap-2 font-semibold text-gray-900">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    Worked with 150+ artists worldwide
+                <div className="flex flex-col items-center gap-2 font-manrope">
+                  <span className="flex items-center gap-2 font-semibold text-gray-900 text-sm">
+                    Trusted by 300+ Artists
                   </span>
-                  <span className="text-xs text-gray-500">
-                    Across EU • US • LatAm
+                  <span className="text-sm text-gray-700">
+                    ⭐ 2B+ Organic Views Delivered
                   </span>
                 </div>
                 <div className="text-xs text-gray-500 font-manrope text-center mt-1">
