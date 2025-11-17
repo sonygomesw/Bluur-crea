@@ -8,6 +8,7 @@ import ResultsSection from './components/ResultsSection';
 import WhyBluur from './components/WhyBluur';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
+import WhoUsesThis from './components/WhoUsesThis';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -25,6 +26,7 @@ function App() {
         <WhyBluur />
         <FAQ />
         <FinalCTA />
+        <WhoUsesThis />
       </main>
       <Footer />
     </div>

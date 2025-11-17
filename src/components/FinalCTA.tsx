@@ -16,7 +16,7 @@ const FinalCTA = () => {
             Go Viral?
           </h2>
           <p className="text-xl text-gray-600 font-manrope mb-8">
-            Join thousands of artists who've already blown up on TikTok
+            Join hundreds of artists who already blew up on TikTok
           </p>
 
           <div className="flex flex-col items-center justify-center gap-6 mb-8">

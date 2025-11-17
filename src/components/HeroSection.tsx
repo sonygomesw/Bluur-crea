@@ -52,7 +52,7 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              We Make Your Music<br/>Go Viral
+              We Make Your Music Go Viral
             </h1>
 
             <p
@@ -60,8 +60,8 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              We create thousands of videos with your song<br/>
-              and post them on TikTok to get you streams and fans.
+              Most artists get 10–50 TikTok videos for their song.<br/>
+              We create <span className="font-bold text-gray-900">100 to 100,000 videos</span> and post them on <span className="font-bold text-gray-900">1,000+ accounts</span> to make your song explode.
             </p>
 
             {/* Social Proof Badge */}
@@ -70,15 +70,15 @@ const HeroSection = () => {
             }`}>
               <div className="inline-flex flex-col items-center gap-3 bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                 <div className="flex flex-col items-center gap-2 font-manrope">
-                  <span className="flex items-center gap-2 font-semibold text-gray-900 text-sm">
-                    Trusted by 300+ Artists
+                  <span className="flex items-center gap-2 font-semibold text-gray-900">
+                    ⭐ Trusted by 300+ Artists
                   </span>
                   <span className="text-sm text-gray-700">
-                    ⭐ 2B+ Organic Views Delivered
+                    2B+ Organic Views Delivered
                   </span>
                 </div>
-                <div className="text-xs text-gray-500 font-manrope text-center mt-1">
-                  Powered viral hits like <span className="font-semibold text-gray-700">Sombr, Hugel, Beele, Benson Boone, WizTheMC</span>
+                <div className="text-sm text-gray-600 font-manrope text-center mt-2">
+                  ✨ Viral hits powered like: <span className="font-semibold text-gray-900">Sombr • Hugel • Beele • WizTheMC</span>
                 </div>
               </div>
             </div>
