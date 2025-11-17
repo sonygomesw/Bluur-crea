@@ -33,9 +33,10 @@ const PricingSection = () => {
 
   const plans = [
     {
-      name: '100 Videos',
-      videos: 'Starter Package',
+      name: 'Starter',
+      videos: '100 Videos',
       price: '199€',
+      description: '',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
       color: 'from-blue-50 to-blue-100',
       buttonText: 'Get Started',
@@ -44,9 +45,10 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: '300 Videos',
-      videos: 'Growth Package',
+      name: 'Growth',
+      videos: '300 Videos',
       price: '499€',
+      description: '',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
       color: 'from-violet-50 to-violet-100',
       buttonText: 'Get Started',
@@ -55,9 +57,10 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: '500 Videos',
-      videos: 'Popular Choice',
-      price: '999€',
+      name: 'Viral',
+      videos: '1,000 Videos',
+      price: '2,490€',
+      description: 'Most popular among artists aiming for playlists & club traction',
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
       buttonText: 'Get Started',
@@ -66,55 +69,12 @@ const PricingSection = () => {
       popular: true
     },
     {
-      name: '1,000 Videos',
-      videos: 'Pro Package',
-      price: '2,490€',
+      name: 'Domination',
+      videos: '10,000 Videos',
+      price: '9,900€',
+      description: 'For labels and serious campaigns',
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
-      buttonText: 'Get Started',
-      paymentLink: '#',
-      delay: 'delay-300',
-      popular: false
-    },
-    {
-      name: '3,000 Videos',
-      videos: 'Major Push',
-      price: '4,990€',
-      icon: <Rocket className="w-6 h-6 text-orange-600" />,
-      color: 'from-orange-50 to-orange-100',
-      buttonText: 'Get Started',
-      paymentLink: '#',
-      delay: 'delay-0',
-      popular: false
-    },
-    {
-      name: '10,000 Videos',
-      videos: 'Viral Campaign',
-      price: '9,900€',
-      icon: <Zap className="w-6 h-6 text-indigo-600" />,
-      color: 'from-indigo-50 to-indigo-100',
-      buttonText: 'Get Started',
-      paymentLink: '#',
-      delay: 'delay-100',
-      popular: false
-    },
-    {
-      name: '50,000 Videos',
-      videos: 'Maximum Exposure',
-      price: '19,900€',
-      icon: <Target className="w-6 h-6 text-pink-600" />,
-      color: 'from-pink-50 to-pink-100',
-      buttonText: 'Get Started',
-      paymentLink: '#',
-      delay: 'delay-200',
-      popular: false
-    },
-    {
-      name: '100,000 Videos',
-      videos: 'Ultimate Package',
-      price: '39,900€',
-      icon: <Crown className="w-6 h-6 text-gray-900" />,
-      color: 'from-gray-50 to-gray-100',
       buttonText: 'Get Started',
       paymentLink: '#',
       delay: 'delay-300',
@@ -135,7 +95,8 @@ const PricingSection = () => {
             Pick Your Package
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            Choose how many videos you want. More videos = more exposure = more streams.
+            Choose how many videos you want.<br/>
+            More videos = more exposure = more streams.
           </p>
         </div>
 
@@ -161,12 +122,24 @@ const PricingSection = () => {
 
                 <div className="relative text-center">
                   <h3 className="text-2xl font-bold mb-3 font-manrope text-gray-900">
-                    {plan.name} — {plan.videos}
+                    {plan.name}
                   </h3>
 
-                  <p className="text-4xl font-bold text-gray-900 font-manrope mb-6">
+                  <p className="text-4xl font-bold text-gray-900 font-manrope mb-2">
                     {plan.price}
                   </p>
+
+                  <p className="text-lg text-gray-600 font-manrope mb-6">
+                    {plan.videos}
+                  </p>
+
+                  {plan.description && (
+                    <div className="mb-6 p-3 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl border border-orange-100">
+                      <p className="text-sm font-semibold text-orange-700 font-manrope">
+                        🔥 {plan.description}
+                      </p>
+                    </div>
+                  )}
 
                   <div className="space-y-2 mb-6 text-left text-sm text-gray-600 font-manrope">
                     <div className="flex items-center gap-2">
@@ -208,6 +181,27 @@ const PricingSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Custom Plan Section */}
+        <div className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 delay-500 ${
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+        }`}>
+          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 border border-gray-200">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-manrope mb-4">
+              Need 50,000–100,000 videos?
+            </h3>
+            <p className="text-lg text-gray-600 font-manrope mb-6">
+              Contact us for a custom plan tailored to your needs.
+            </p>
+            <a
+              href="mailto:bluurcreator@gmail.com"
+              className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl font-medium hover:bg-gray-800 hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group"
+            >
+              <span className="font-manrope">Contact Us</span>
+              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+          </div>
         </div>
 
       </div>
