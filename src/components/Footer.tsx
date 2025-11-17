@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, ArrowUpRight, MessageCircle } from 'lucide-react';
+import { Mail, ArrowUpRight, MessageCircle, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -74,23 +74,39 @@ const Footer = () => {
                 bluurcreator@gmail.com
               </li>
               <li>
-                <a 
-                  href="https://wa.me/33628160295" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/bluur.creator/"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-xl font-medium hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group relative overflow-hidden"
+                  className="group flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-300"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <span className="relative z-10">Let's Talk</span>
-                  <MessageCircle className="relative z-10 w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                  <Instagram className="w-4 h-4 mr-2" />
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.threads.net/@bluur.creator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-300"
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  Threads
                 </a>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-100 mt-16 pt-8 flex justify-center">
-          <p className="text-sm text-gray-500 font-manrope">&copy; {currentYear} Bluur Creator. All rights reserved.</p>
+        <div className="border-t border-gray-100 mt-16 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-gray-500 font-manrope">&copy; {currentYear} Bluur Creator. All rights reserved.</p>
+            <div className="flex items-center gap-6 text-sm text-gray-500 font-manrope">
+              <a href="#" className="hover:text-gray-900 transition-colors duration-300">Terms of Service</a>
+              <a href="#" className="hover:text-gray-900 transition-colors duration-300">Privacy Policy</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

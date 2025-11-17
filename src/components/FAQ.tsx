@@ -6,24 +6,36 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How do you guarantee millions of views?",
-      answer: "We use a strategic content flood approach, publishing thousands of videos that force the algorithm to push your content. It's not luck, it's a formula."
+      question: "How do you guarantee virality?",
+      answer: "We don't guarantee virality—we guarantee volume. Virality happens when enough content is distributed at scale. With 100–100,000 videos posted across 1,000+ accounts, the law of large numbers ensures your track gets maximum exposure, dramatically increasing the chances of a viral breakthrough."
     },
     {
-      question: "How long before seeing initial results?",
-      answer: "Our system is built for speed, once the content wave is launched, the engagement snowballs, pushing your brand in front of millions. The real growth compounds over weeks as the algorithm continues to amplify reach."
+      question: "What makes your system different?",
+      answer: "Volume. No other platform can create and distribute 100,000 videos for your track. We've built the infrastructure—1,000+ accounts, trend templates, and AI-powered creation tools—that other agencies simply don't have. This is our moat."
     },
     {
-      question: "What performance guarantees do you offer?",
-      answer: "We guarantee visibility. Every campaign includes a minimum benchmark of organic views. For high-tier packages, we provide performance tracking and real-time optimizations to ensure the best possible reach. Our track record speaks for itself—2B+ views generated, 100+ brands scaled."
+      question: "When do I see results?",
+      answer: "Most clients see initial traction within 7-14 days as content floods TikTok. Real momentum builds over 30-60 days as the algorithm picks up on trending patterns and user-generated content begins snowballing organically."
     },
     {
-      question: "How does payment and campaign tracking work?",
-      answer: "Payments are upfront and secure. We accept multiple payment methods, including wire transfers and crypto for high-volume transactions. Every campaign comes with a real-time performance dashboard where you can track views, engagement, and campaign progress in real-time."
+      question: "Do I need to provide videos?",
+      answer: "No. Just send us your track link (Spotify, Drive, etc.). We handle everything: content creation, editing, posting, optimization, and reporting. You sit back and watch the numbers grow."
     },
     {
-      question: "Who creates the content? Do we need to provide videos?",
-      answer: "You don't have to lift a finger. We handle everything—from content creation to distribution. If you already have high-performing assets, we can repurpose them for maximum impact. Otherwise, our team produces viral-optimized content based on proven engagement triggers."
+      question: "Is this allowed by TikTok?",
+      answer: "Yes. We use real creator accounts, authentic content, and organic distribution. We don't use bots, fake engagement, or spam tactics. Everything is 100% compliant with TikTok's terms of service."
+    },
+    {
+      question: "Can this create Spotify streams?",
+      answer: "Absolutely. TikTok videos drive users to search and stream your track on Spotify. Case studies like Sombr (1B streams) and Benson Boone (1.5B+ streams) prove the direct correlation between TikTok volume and streaming success."
+    },
+    {
+      question: "What kind of artists is this for?",
+      answer: "Everyone—from emerging artists testing their first release to established acts looking for their next hit. If you have a track that deserves attention, our system works. Volume is the equalizer."
+    },
+    {
+      question: "What is the refund policy?",
+      answer: "We don't offer refunds once a campaign starts, as we immediately begin creating and distributing content at scale. However, we're confident in our system—our track record speaks for itself with 2B+ views delivered and artists hitting 10M–1B streams."
     }
   ];
 

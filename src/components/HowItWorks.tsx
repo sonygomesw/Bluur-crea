@@ -29,32 +29,32 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: <Rocket className="w-6 h-6 text-violet-600" />,
-      title: "Step 1 — You Send Your Track",
-      description: "Upload your music, content, or product. That's it.",
+      title: "Step 1 — Upload Your Track",
+      description: "Send your Spotify/Drive link.",
       color: "from-violet-50 to-violet-100",
       iconColor: "text-violet-600",
       delay: "delay-0"
     },
     {
       icon: <Video className="w-6 h-6 text-blue-600" />,
-      title: "Step 2 — We Create 30 to 10,000 Viral Videos",
-      description: "Our AI & creative team produce hundreds to thousands of trend-ready clips.",
+      title: "Step 2 — We Create the Content",
+      description: "100–100,000 AI + human-crafted trend clips.",
       color: "from-blue-50 to-blue-100",
       iconColor: "text-blue-600",
       delay: "delay-100"
     },
     {
       icon: <Users className="w-6 h-6 text-gray-900" />,
-      title: "Step 3 — We Post Across 1000+ Accounts",
-      description: "We distribute across TikTok, Reels & Shorts at massive scale.",
+      title: "Step 3 — We Post on 1,000+ Accounts",
+      description: "Your sound floods TikTok 24/7.",
       color: "from-gray-50 to-gray-100",
       iconColor: "text-gray-900",
       delay: "delay-200"
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-green-600" />,
-      title: "Step 4 — You Get Views, Followers & Streams",
-      description: "Watch your metrics explode as viral content drives real growth.",
+      title: "Step 4 — You Get Volume",
+      description: "Views → videos → streams → algorithm snowball → virality.",
       color: "from-green-50 to-green-100",
       iconColor: "text-green-600",
       delay: "delay-300"

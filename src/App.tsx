@@ -1,14 +1,15 @@
 import React from 'react';
-import { Calendar, ArrowRight, CheckCircle, Star } from 'lucide-react';
 import HeroSection from './components/HeroSection';
-import WhyBluur from './components/WhyBluur';
+import ViralityVolume from './components/ViralityVolume';
+import PunchlineSection from './components/PunchlineSection';
 import HowItWorks from './components/HowItWorks';
 import PricingSection from './components/PricingSection';
-import OurWork from './components/OurWork';
+import ResultsSection from './components/ResultsSection';
+import WhyBluur from './components/WhyBluur';
+import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -16,10 +17,12 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <WhyBluur />
+        <ViralityVolume />
+        <PunchlineSection />
         <HowItWorks />
         <PricingSection />
-        <OurWork />
+        <ResultsSection />
+        <WhyBluur />
         <FAQ />
         <FinalCTA />
       </main>

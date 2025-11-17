@@ -33,58 +33,90 @@ const PricingSection = () => {
 
   const plans = [
     {
-      name: 'Starter Campaign',
-      description: 'Best for testing new tracks or products',
-      videos: '300 videos / 30 days',
-      expectedResults: '+100K–300K organic views',
-      price: '$400',
-      priceLabel: 'per campaign',
+      name: 'Starter',
+      videos: '100 Videos',
+      price: '199€',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
       color: 'from-blue-50 to-blue-100',
-      buttonText: 'Start Now',
-      paymentLink: 'https://buy.stripe.com/00w8wOfy54Zz0in7z1gUM09',
+      buttonText: 'Get Started',
+      paymentLink: '#',
       delay: 'delay-0',
       popular: false
     },
     {
-      name: 'Growth Campaign',
-      description: 'Typical outcome: 10K–100K streams or followers',
-      videos: '900 videos / 30 days',
-      expectedResults: '+500K–1M organic views',
-      price: '$900',
-      priceLabel: 'per campaign',
+      name: 'Growth',
+      videos: '300 Videos',
+      price: '499€',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
       color: 'from-violet-50 to-violet-100',
-      buttonText: 'Start Now',
-      paymentLink: 'https://buy.stripe.com/14A14m99Hdw5fdhaLdgUM0a',
+      buttonText: 'Get Started',
+      paymentLink: '#',
       delay: 'delay-100',
+      popular: false
+    },
+    {
+      name: 'Momentum',
+      videos: '500 Videos',
+      price: '999€',
+      icon: <Target className="w-6 h-6 text-green-600" />,
+      color: 'from-green-50 to-green-100',
+      buttonText: 'Get Started',
+      paymentLink: '#',
+      delay: 'delay-200',
       popular: true
     },
     {
-      name: 'Domination Campaign',
-      description: 'Drives massive exposure, bookings & brand awareness',
-      videos: '3,000 videos / 30 days',
-      expectedResults: '+2M–10M organic views',
-      price: '$3,000',
-      priceLabel: 'per campaign',
-      icon: <Target className="w-6 h-6 text-fuchsia-600" />,
+      name: 'Domination',
+      videos: '1,000 Videos',
+      price: '2,490€',
+      icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
-      buttonText: 'Start Now',
-      paymentLink: 'https://buy.stripe.com/fZu6oGeu1dw55CH8D5gUM0b',
+      buttonText: 'Get Started',
+      paymentLink: '#',
+      delay: 'delay-300',
+      popular: false
+    },
+    {
+      name: 'Explosion',
+      videos: '3,000 Videos',
+      price: '4,990€',
+      icon: <Rocket className="w-6 h-6 text-orange-600" />,
+      color: 'from-orange-50 to-orange-100',
+      buttonText: 'Get Started',
+      paymentLink: '#',
+      delay: 'delay-0',
+      popular: false
+    },
+    {
+      name: 'Viral Storm',
+      videos: '10,000 Videos',
+      price: '9,900€',
+      icon: <Zap className="w-6 h-6 text-indigo-600" />,
+      color: 'from-indigo-50 to-indigo-100',
+      buttonText: 'Get Started',
+      paymentLink: '#',
+      delay: 'delay-100',
+      popular: false
+    },
+    {
+      name: 'Viral Takeover',
+      videos: '50,000 Videos',
+      price: '19,900€',
+      icon: <Target className="w-6 h-6 text-pink-600" />,
+      color: 'from-pink-50 to-pink-100',
+      buttonText: 'Get Started',
+      paymentLink: '#',
       delay: 'delay-200',
       popular: false
     },
     {
-      name: 'Supreme Campaign',
-      description: 'Maximum viral domination for enterprises',
-      videos: '10,000 videos / 30 days',
-      expectedResults: '+10M+ organic views',
-      price: '$10,000',
-      priceLabel: 'per campaign',
+      name: 'Megavirality',
+      videos: '100,000 Videos',
+      price: '39,900€',
       icon: <Crown className="w-6 h-6 text-gray-900" />,
       color: 'from-gray-50 to-gray-100',
-      buttonText: 'Start Now',
-      paymentLink: 'https://buy.stripe.com/7sY8wO71zfEd9SXf1tgUM0c',
+      buttonText: 'Get Started',
+      paymentLink: '#',
       delay: 'delay-300',
       popular: false
     }
@@ -100,12 +132,8 @@ const PricingSection = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            Start Your Viral Campaign
+            Choose Your Viral Volume
           </h2>
-          <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            Choose your growth level. We handle everything — from content to posting.<br/>
-            <span className="text-gray-900 font-semibold">No contracts. Cancel anytime.</span>
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
@@ -128,32 +156,37 @@ const PricingSection = () => {
                 {/* Hover gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white/0 to-gray-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                <div className="relative">
-                  <div className="mb-6">
-                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br ${plan.color} group-hover:scale-110 transition-transform duration-300`}>
-                      {plan.icon}
-                    </div>
-                  </div>
-
-                  <h3 className="text-xl font-bold mb-2 font-manrope text-gray-900">
-                    {plan.name}
+                <div className="relative text-center">
+                  <h3 className="text-2xl font-bold mb-3 font-manrope text-gray-900">
+                    {plan.name} — {plan.videos}
                   </h3>
 
-                  <p className="text-3xl font-bold text-gray-900 font-manrope mb-1">
+                  <p className="text-4xl font-bold text-gray-900 font-manrope mb-6">
                     {plan.price}
                   </p>
 
-                  <p className="text-sm text-gray-500 font-manrope mb-3">
-                    {plan.videos}
-                  </p>
-
-                  <p className="text-sm font-semibold text-green-700 bg-green-50 rounded-lg px-3 py-2 mb-3">
-                    {plan.expectedResults}
-                  </p>
-
-                  <p className="text-gray-600 mb-4 font-manrope text-sm leading-relaxed">
-                    {plan.description}
-                  </p>
+                  <div className="space-y-2 mb-6 text-left text-sm text-gray-600 font-manrope">
+                    <div className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                      <span>Distribution 24/7</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                      <span>Full reporting</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                      <span>Trend optimization</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                      <span>No contract</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                      <span>Cancel anytime</span>
+                    </div>
+                  </div>
 
                   <a
                     href={plan.paymentLink}
@@ -174,31 +207,6 @@ const PricingSection = () => {
           ))}
         </div>
 
-        {/* Additional Info */}
-        <div className={`max-w-4xl mx-auto space-y-6 transform transition-all duration-1000 delay-500 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-50 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-green-600" />
-                </div>
-                <p className="text-gray-700 font-manrope">
-                  All campaigns include full content distribution, optimization, and weekly reporting.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-blue-600" />
-                </div>
-                <p className="text-gray-700 font-manrope">
-                  We only work with 50 clients at a time to maintain quality.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
