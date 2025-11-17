@@ -52,7 +52,7 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              We Make Your Music<br/>Go Viral on TikTok
+              We Make Your Music<br/>Go Viral
             </h1>
 
             <p
