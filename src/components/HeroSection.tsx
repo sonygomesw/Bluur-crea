@@ -30,21 +30,14 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 md:px-12 z-10">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center text-center mb-20">            
-            <div 
+            <div
               className={`flex justify-center mb-10 transform transition-all duration-1000 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-violet-200/40 via-fuchsia-200/40 to-blue-200/40 rounded-3xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
-                <div className="relative rounded-3xl">
-                  <img 
-                    src="https://i.imgur.com/196ODOB.png" 
-                    alt="Bluur Creator Logo" 
-                    className="h-32 w-auto object-contain transition-all duration-500 group-hover:scale-105"
-                  />
-                </div>
-              </div>
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 via-blue-600 to-fuchsia-600 font-manrope tracking-tight">
+                Bluur
+              </h1>
             </div>
               
             <h1
