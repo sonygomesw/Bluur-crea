@@ -34,7 +34,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: 'Starter',
-      videos: '100 Videos',
+      videos: '100 vidéos',
       price: '199€',
       description: '',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
@@ -46,7 +46,7 @@ const PricingSection = () => {
     },
     {
       name: 'Growth',
-      videos: '300 Videos',
+      videos: '300 vidéos',
       price: '499€',
       description: '',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
@@ -58,9 +58,9 @@ const PricingSection = () => {
     },
     {
       name: 'Viral',
-      videos: '1,000 Videos',
-      price: '2,490€',
-      description: 'Most popular among artists aiming for playlists & club traction',
+      videos: '500 vidéos',
+      price: '999€',
+      description: 'Plan principal',
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
       buttonText: 'Get Started',
@@ -70,9 +70,9 @@ const PricingSection = () => {
     },
     {
       name: 'Domination',
-      videos: '10,000 Videos',
-      price: '9,900€',
-      description: 'For labels and serious campaigns',
+      videos: '1,500 vidéos',
+      price: '2,490€',
+      description: '',
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
       buttonText: 'Get Started',
@@ -189,10 +189,10 @@ const PricingSection = () => {
         }`}>
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 border border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-manrope mb-4">
-              Need 50,000–100,000 videos?
+              Ultra — 10,000+ vidéos
             </h3>
             <p className="text-lg text-gray-600 font-manrope mb-6">
-              Contact us for a custom plan tailored to your needs.
+              Sur demande
             </p>
             <a
               href="mailto:bluurcreator@gmail.com"
