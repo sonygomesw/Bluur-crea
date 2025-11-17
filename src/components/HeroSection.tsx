@@ -35,9 +35,11 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 via-blue-600 to-fuchsia-600 font-manrope tracking-tight">
-                Bluur
-              </h1>
+              <img
+                src="/logobluur.png"
+                alt="Bluur Logo"
+                className="h-24 md:h-32 w-auto object-contain"
+              />
             </div>
               
             <h1
