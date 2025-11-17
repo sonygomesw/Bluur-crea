@@ -52,7 +52,7 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              Hits Aren't Found.<br/>They're Built.<br/>We Build Them.
+              We Make Your Music<br/>Go Viral on TikTok
             </h1>
 
             <p
@@ -60,8 +60,8 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              We create 100–100,000 TikTok videos for your track,<br/>
-              distributed across 1,000+ accounts to force virality.
+              We create thousands of videos with your song<br/>
+              and post them on TikTok to get you streams and fans.
             </p>
 
             {/* Social Proof Badge */}

@@ -6,36 +6,36 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How do you guarantee virality?",
-      answer: "We don't guarantee virality—we guarantee volume. Virality happens when enough content is distributed at scale. With 100–100,000 videos posted across 1,000+ accounts, the law of large numbers ensures your track gets maximum exposure, dramatically increasing the chances of a viral breakthrough."
+      question: "How does this work?",
+      answer: "Simple: You send us your song. We create hundreds or thousands of TikTok videos using your song. We post these videos on our network of 1,000+ TikTok accounts. People see your song, like it, and stream it on Spotify."
     },
     {
-      question: "What makes your system different?",
-      answer: "Volume. No other platform can create and distribute 100,000 videos for your track. We've built the infrastructure—1,000+ accounts, trend templates, and AI-powered creation tools—that other agencies simply don't have. This is our moat."
+      question: "Do I need to make the videos myself?",
+      answer: "No! We make all the videos for you. Just send us your song (Spotify link or audio file). We do everything else."
     },
     {
-      question: "When do I see results?",
-      answer: "Most clients see initial traction within 7-14 days as content floods TikTok. Real momentum builds over 30-60 days as the algorithm picks up on trending patterns and user-generated content begins snowballing organically."
+      question: "When will I see results?",
+      answer: "Most artists start seeing views and streams within 1-2 weeks. Big results usually happen after 30-60 days when TikTok's algorithm picks up your song."
     },
     {
-      question: "Do I need to provide videos?",
-      answer: "No. Just send us your track link (Spotify, Drive, etc.). We handle everything: content creation, editing, posting, optimization, and reporting. You sit back and watch the numbers grow."
+      question: "Is this safe? Will TikTok ban me?",
+      answer: "Yes, it's completely safe. We use real TikTok accounts and real content. No bots, no fake engagement. Everything follows TikTok's rules."
     },
     {
-      question: "Is this allowed by TikTok?",
-      answer: "Yes. We use real creator accounts, authentic content, and organic distribution. We don't use bots, fake engagement, or spam tactics. Everything is 100% compliant with TikTok's terms of service."
+      question: "Will this get me Spotify streams?",
+      answer: "Yes! When people see your song on TikTok, they go to Spotify to listen to it. That's how songs like \"Beautiful Things\" by Benson Boone got 1.5 billion streams."
     },
     {
-      question: "Can this create Spotify streams?",
-      answer: "Absolutely. TikTok videos drive users to search and stream your track on Spotify. Case studies like Sombr (1B streams) and Benson Boone (1.5B+ streams) prove the direct correlation between TikTok volume and streaming success."
+      question: "What if my song doesn't go viral?",
+      answer: "Even if you don't go super viral, you'll still get thousands of views and streams. The more videos we make, the more people see your song. That's guaranteed."
     },
     {
-      question: "What kind of artists is this for?",
-      answer: "Everyone—from emerging artists testing their first release to established acts looking for their next hit. If you have a track that deserves attention, our system works. Volume is the equalizer."
+      question: "Who is this for?",
+      answer: "Any music artist - new or established. If you have a song that deserves to be heard, this works for you."
     },
     {
-      question: "What is the refund policy?",
-      answer: "We don't offer refunds once a campaign starts, as we immediately begin creating and distributing content at scale. However, we're confident in our system—our track record speaks for itself with 2B+ views delivered and artists hitting 10M–1B streams."
+      question: "Can I get a refund?",
+      answer: "We don't offer refunds because we start making videos immediately. But we've helped hundreds of artists get millions of streams, so we're confident it will work for you too."
     }
   ];
 
@@ -52,10 +52,10 @@ const FAQ = () => {
             <HelpCircle className="w-8 h-8 text-violet-600" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 font-manrope leading-tight">
-            Frequently Asked<br/>Questions
+            Common Questions
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            Everything you need to know about our viral growth system
+            Everything explained in simple terms
           </p>
         </div>
 

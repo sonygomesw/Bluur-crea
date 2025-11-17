@@ -36,9 +36,11 @@ const WhyBluur = () => {
             <Target className="w-8 h-8 text-violet-600 transform group-hover:rotate-12 transition-transform duration-300" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            This Is Your Army.<br/>
-            Other Agencies Cannot Compete.
+            Why Choose Us?
           </h2>
+          <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-3xl mx-auto">
+            We have the biggest TikTok network for music promotion
+          </p>
         </div>
 
         <div className={`max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 transform transition-all duration-1000 delay-200 ${

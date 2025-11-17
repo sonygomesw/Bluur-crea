@@ -33,8 +33,8 @@ const PricingSection = () => {
 
   const plans = [
     {
-      name: 'Starter',
-      videos: '100 Videos',
+      name: '100 Videos',
+      videos: 'Starter Package',
       price: '199€',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
       color: 'from-blue-50 to-blue-100',
@@ -44,8 +44,8 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Growth',
-      videos: '300 Videos',
+      name: '300 Videos',
+      videos: 'Growth Package',
       price: '499€',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
       color: 'from-violet-50 to-violet-100',
@@ -55,8 +55,8 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Momentum',
-      videos: '500 Videos',
+      name: '500 Videos',
+      videos: 'Popular Choice',
       price: '999€',
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
@@ -66,8 +66,8 @@ const PricingSection = () => {
       popular: true
     },
     {
-      name: 'Domination',
-      videos: '1,000 Videos',
+      name: '1,000 Videos',
+      videos: 'Pro Package',
       price: '2,490€',
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
@@ -77,8 +77,8 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Explosion',
-      videos: '3,000 Videos',
+      name: '3,000 Videos',
+      videos: 'Major Push',
       price: '4,990€',
       icon: <Rocket className="w-6 h-6 text-orange-600" />,
       color: 'from-orange-50 to-orange-100',
@@ -88,8 +88,8 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Viral Storm',
-      videos: '10,000 Videos',
+      name: '10,000 Videos',
+      videos: 'Viral Campaign',
       price: '9,900€',
       icon: <Zap className="w-6 h-6 text-indigo-600" />,
       color: 'from-indigo-50 to-indigo-100',
@@ -99,8 +99,8 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Viral Takeover',
-      videos: '50,000 Videos',
+      name: '50,000 Videos',
+      videos: 'Maximum Exposure',
       price: '19,900€',
       icon: <Target className="w-6 h-6 text-pink-600" />,
       color: 'from-pink-50 to-pink-100',
@@ -110,8 +110,8 @@ const PricingSection = () => {
       popular: false
     },
     {
-      name: 'Megavirality',
-      videos: '100,000 Videos',
+      name: '100,000 Videos',
+      videos: 'Ultimate Package',
       price: '39,900€',
       icon: <Crown className="w-6 h-6 text-gray-900" />,
       color: 'from-gray-50 to-gray-100',
@@ -132,8 +132,11 @@ const PricingSection = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            Choose Your Viral Volume
+            Pick Your Package
           </h2>
+          <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
+            Choose how many videos you want. More videos = more exposure = more streams.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">

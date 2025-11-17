@@ -29,32 +29,32 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: <Rocket className="w-6 h-6 text-violet-600" />,
-      title: "Step 1 — Upload Your Track",
-      description: "Send your Spotify/Drive link.",
+      title: "1. Send Us Your Song",
+      description: "Give us your Spotify link or send us your track.",
       color: "from-violet-50 to-violet-100",
       iconColor: "text-violet-600",
       delay: "delay-0"
     },
     {
       icon: <Video className="w-6 h-6 text-blue-600" />,
-      title: "Step 2 — We Create the Content",
-      description: "100–100,000 AI + human-crafted trend clips.",
+      title: "2. We Make Videos",
+      description: "We create hundreds to thousands of TikTok videos with your song.",
       color: "from-blue-50 to-blue-100",
       iconColor: "text-blue-600",
       delay: "delay-100"
     },
     {
       icon: <Users className="w-6 h-6 text-gray-900" />,
-      title: "Step 3 — We Post on 1,000+ Accounts",
-      description: "Your sound floods TikTok 24/7.",
+      title: "3. We Post Them Everywhere",
+      description: "We post your videos on 1,000+ TikTok accounts every day.",
       color: "from-gray-50 to-gray-100",
       iconColor: "text-gray-900",
       delay: "delay-200"
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-green-600" />,
-      title: "Step 4 — You Get Volume",
-      description: "Views → videos → streams → algorithm snowball → virality.",
+      title: "4. You Get Streams & Fans",
+      description: "People see your song on TikTok, then stream it on Spotify and follow you.",
       color: "from-green-50 to-green-100",
       iconColor: "text-green-600",
       delay: "delay-300"
@@ -79,10 +79,10 @@ const HowItWorks = () => {
             <Rocket className="w-8 h-8 text-blue-600 transform group-hover:rotate-12 transition-transform duration-300" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            How We Actually Work
+            How It Works
           </h2>
           <p className="text-xl text-gray-600 font-manrope leading-relaxed max-w-2xl mx-auto">
-            Simple, transparent, and built to scale your viral success.
+            4 simple steps to make your song go viral
           </p>
         </div>
         

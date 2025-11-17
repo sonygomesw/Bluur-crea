@@ -68,8 +68,11 @@ const ResultsSection = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            From TikTok Videos → To Streams → To Hits
+            Our Results
           </h2>
+          <p className="text-xl text-gray-600 font-manrope max-w-2xl mx-auto">
+            Real artists, real numbers, real success
+          </p>
         </div>
 
         {/* Metrics Grid */}

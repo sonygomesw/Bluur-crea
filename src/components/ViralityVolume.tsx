@@ -75,9 +75,12 @@ const ViralityVolume = () => {
             <TrendingUp className="w-8 h-8 text-violet-600 transform group-hover:rotate-12 transition-transform duration-300" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 font-manrope leading-tight">
-            Every Hit Has One Thing in Common:<br/>
-            Volume. Massive Volume.
+            How Songs Become Hits:<br/>
+            Thousands of TikTok Videos
           </h2>
+          <p className="text-xl text-gray-600 font-manrope max-w-2xl mx-auto">
+            Every viral song has one thing in common: massive exposure on TikTok.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -116,7 +119,7 @@ const ViralityVolume = () => {
               </div>
 
               <div className="mt-6 text-center">
-                <p className="text-sm font-bold text-gray-900 font-manrope">Volume → Inevitable Virality</p>
+                <p className="text-sm font-bold text-gray-900 font-manrope">More Videos = More Streams</p>
               </div>
             </div>
           ))}
