@@ -46,7 +46,7 @@ const HowItWorks = () => {
     {
       icon: <Users className="w-6 h-6 text-gray-900" />,
       title: "Step 3 — We Post Across 1000+ Accounts",
-      description: "We distribute across TikTok, Reels & Shorts using our 60+ phone farm.",
+      description: "We distribute across TikTok, Reels & Shorts at massive scale.",
       color: "from-gray-50 to-gray-100",
       iconColor: "text-gray-900",
       delay: "delay-200"

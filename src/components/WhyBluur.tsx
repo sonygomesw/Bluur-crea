@@ -125,7 +125,7 @@ const WhyBluur = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-left">
             <div className="flex items-start">
               <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
-              <p className="text-gray-700 font-manrope">They don't have your farm</p>
+              <p className="text-gray-700 font-manrope">They don't have your infrastructure</p>
             </div>
             <div className="flex items-start">
               <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
