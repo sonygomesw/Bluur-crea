@@ -54,7 +54,7 @@ const PricingSection = () => {
     },
     {
       name: 'Growth',
-      videos: '750 TikTok Videos',
+      videos: '500 TikTok Videos',
       price: '499€',
       description: '',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
@@ -66,7 +66,7 @@ const PricingSection = () => {
     },
     {
       name: 'Viral',
-      videos: '2,000 TikTok Videos',
+      videos: '1,500 TikTok Videos',
       price: '999€',
       description: 'Most Popular',
       icon: <Target className="w-6 h-6 text-green-600" />,
