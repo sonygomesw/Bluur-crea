@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Check, ArrowRight, Rocket, Zap, Target, Crown } from 'lucide-react';
+import OrderModal from './OrderModal';
 
 const PricingSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<any>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -31,52 +34,57 @@ const PricingSection = () => {
     contactSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleGetStarted = (plan: any) => {
+    setSelectedPlan(plan);
+    setIsModalOpen(true);
+  };
+
   const plans = [
     {
       name: 'Starter',
-      videos: '100 Videos',
-      price: '199€',
+      videos: '250 TikTok Videos',
+      price: '299€',
       description: '',
       icon: <Rocket className="w-6 h-6 text-blue-600" />,
       color: 'from-blue-50 to-blue-100',
       buttonText: 'Get Started',
-      paymentLink: '#',
+      paymentLink: 'https://buy.stripe.com/3cIbJ0clT63D3uzg5xgUM0f',
       delay: 'delay-0',
       popular: false
     },
     {
       name: 'Growth',
-      videos: '300 Videos',
+      videos: '500 TikTok Videos',
       price: '499€',
       description: '',
       icon: <Zap className="w-6 h-6 text-violet-600" />,
       color: 'from-violet-50 to-violet-100',
       buttonText: 'Get Started',
-      paymentLink: '#',
+      paymentLink: 'https://buy.stripe.com/7sY4gy71zgIhc15g5xgUM0g',
       delay: 'delay-100',
       popular: false
     },
     {
       name: 'Viral',
-      videos: '500 Videos',
+      videos: '1,500 TikTok Videos',
       price: '999€',
       description: 'Most Popular',
       icon: <Target className="w-6 h-6 text-green-600" />,
       color: 'from-green-50 to-green-100',
       buttonText: 'Get Started',
-      paymentLink: '#',
+      paymentLink: 'https://buy.stripe.com/3cI28q2Lj8bLc156uXgUM0h',
       delay: 'delay-200',
       popular: true
     },
     {
       name: 'Domination',
-      videos: '1,500 Videos',
+      videos: '5,000 TikTok Videos',
       price: '2,490€',
       description: '',
       icon: <Crown className="w-6 h-6 text-fuchsia-600" />,
       color: 'from-fuchsia-50 to-fuchsia-100',
       buttonText: 'Get Started',
-      paymentLink: '#',
+      paymentLink: 'https://buy.stripe.com/9B69ASgC977H6GLcTlgUM0i',
       delay: 'delay-300',
       popular: false
     }
@@ -164,10 +172,8 @@ const PricingSection = () => {
                     </div>
                   </div>
 
-                  <a
-                    href={plan.paymentLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => handleGetStarted(plan)}
                     className={`w-full px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 group/btn ${
                       plan.popular
                         ? 'bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:shadow-lg hover:translate-y-[-2px]'
@@ -176,7 +182,7 @@ const PricingSection = () => {
                   >
                     <span className="font-manrope">{plan.buttonText}</span>
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -189,13 +195,15 @@ const PricingSection = () => {
         }`}>
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 border border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-manrope mb-4">
-              Ultra — 10,000+ Videos
+              Custom — 10,000–100,000 videos
             </h3>
             <p className="text-lg text-gray-600 font-manrope mb-6">
-              On Request
+              For major artists & labels
             </p>
             <a
-              href="mailto:bluurcreator@gmail.com"
+              href="https://wa.me/33628160295"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl font-medium hover:bg-gray-800 hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 group"
             >
               <span className="font-manrope">Contact Us</span>
@@ -205,6 +213,15 @@ const PricingSection = () => {
         </div>
 
       </div>
+
+      {/* Order Modal */}
+      {selectedPlan && (
+        <OrderModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          plan={selectedPlan}
+        />
+      )}
     </section>
   );
 };
