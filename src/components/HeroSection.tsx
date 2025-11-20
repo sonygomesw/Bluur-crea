@@ -31,6 +31,15 @@ const HeroSection = () => {
               We Make Your Music Go Viral
             </h1>
 
+            {/* Emotional Hook */}
+            <p
+              className={`font-manrope text-lg md:text-xl text-red-600 font-semibold mb-4 max-w-2xl mx-auto transform transition-all duration-1000 delay-75 ${
+                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+              }`}
+            >
+              If your song doesn't get pushed, nobody will ever hear it. <span className="text-gray-900">We fix that.</span>
+            </p>
+
             <p
               className={`font-manrope text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed transform transition-all duration-1000 delay-100 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
